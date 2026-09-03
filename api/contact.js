@@ -137,7 +137,7 @@ export default async function handler(req, res) {
       });
     }
 
-    const allowedHosts = ["localhost", "metcare-nine.vercel.app"];
+    const allowedHosts = ["localhost", "metcare-nine.vercel.app", "metcarebiomedical.com"];
 
     if (!allowedHosts.includes(verifyData.hostname)) {
       console.error("Unexpected Turnstile hostname:", verifyData.hostname);
