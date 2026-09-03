@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://metcarebiomedical.com/sitemap.xml
