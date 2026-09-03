@@ -25,7 +25,7 @@ function BusinessCompetitiveSection() {
           <SectionHeader
             badge="Business Competitiveness"
             title="Partnering for Better Healthcare"
-            description="Metcare Biomedical Corporation offers competitive rates and unparalled service. Its high level of equality, convenience, and the exceptional customer service experience are what it brings to its customers. Metcare aims to be your partner in quality healthcare delivery."
+            description="METCARE Biomedical Corporation offers competitive rates and unparalled service. Its high level of equality, convenience, and the exceptional customer service experience are what it brings to its customers. METCARE aims to be your partner in quality healthcare delivery."
           />
         </motion.div>
       </Container>

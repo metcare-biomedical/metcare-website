@@ -25,7 +25,7 @@ function HeroSection() {
             <SectionHeader
               badge="Our Services"
               title="Complete biomedical care-maintenance, calibration, and support to keep your equipment reliable."
-              description="Founded in 2015, Metcare Biomedical Corporation specializes in comprehensive biomedical services, offering expert calibration, preventive maintenance, and repair for medical, dental, and laboratory equipment."
+              description="Founded in 2015, METCARE Biomedical Corporation specializes in comprehensive biomedical services, offering expert calibration, preventive maintenance, and repair for medical, dental, and laboratory equipment."
               center={false}
             />
 
@@ -46,7 +46,7 @@ function HeroSection() {
           >
             <img
               src={aboutImage}
-              alt="About Metcare"
+              alt="About METCARE"
               className="w-full rounded-3xl shadow-xl"
             />
           </motion.div> */}

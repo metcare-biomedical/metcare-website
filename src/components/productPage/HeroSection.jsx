@@ -26,7 +26,7 @@ function HeroSection() {
               <SectionHeader
                 badge="Our Products"
                 title="Sales of medical, dental and laboratory equipment and consumables."
-                description="Metcare Biomedical Corporation is a trusted provider of innovative and reliable healthcare solutions. We specialize in the supply, installation, and servicing of high-quality medical, dental, and laboratory equipment, as well as consumables sourced from leading global and local manufacturers. Our commitments is to support healthcare institutions with safe, efficient, and technologically advanced equipment that enhance patient care and operation efficiency."
+                description="METCARE Biomedical Corporation is a trusted provider of innovative and reliable healthcare solutions. We specialize in the supply, installation, and servicing of high-quality medical, dental, and laboratory equipment, as well as consumables sourced from leading global and local manufacturers. Our commitments is to support healthcare institutions with safe, efficient, and technologically advanced equipment that enhance patient care and operation efficiency."
                 center={false}
               />
 

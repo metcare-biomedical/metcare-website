@@ -22,7 +22,7 @@ function NiproSection() {
             <SectionHeader
               badge="Nipro Medical Equipment"
               title="Nipro Medical Philippines Corporation"
-              description="Metcare Biomedical Corporation is an Authorized Distributor of Nipro Medical Philippines Corporation, offering genuine Nipro Medical Products to healthcare institutions and facilities in the Philippines.
+              description="METCARE Biomedical Corporation is an Authorized Distributor of Nipro Medical Philippines Corporation, offering genuine Nipro Medical Products to healthcare institutions and facilities in the Philippines.
 
 Our authorized distribution partnership enables us to provide quality Nipro products together with reliable service and professional technical support, Check official brochures below or contact us for direct product specifications and institutional quotes."
               center={false}
@@ -86,7 +86,7 @@ Our authorized distribution partnership enables us to provide quality Nipro prod
           >
             <img
               src={image}
-              alt="About Metcare"
+              alt="About METCARE"
               className="sm:h-120 h-auto"
               loading="lazy"
               decoding="async"

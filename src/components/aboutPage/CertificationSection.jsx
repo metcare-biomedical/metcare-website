@@ -18,7 +18,7 @@ function CertificationSection() {
           <SectionHeader
             badge="Compliance, Licenses & Certifications"
             title="Standards, Accreditations & Quality Assurance"
-            description="Metcare Biomedical Corporation maintains strict compliance, industry licenses, and certified quality standards to ensure safe, reliable, and seamless healthcare delivery. Explore our official certifications and regulatory accreditations that reinforce our commitment to service excellence."
+            description="METCARE Biomedical Corporation maintains strict compliance, industry licenses, and certified quality standards to ensure safe, reliable, and seamless healthcare delivery. Explore our official certifications and regulatory accreditations that reinforce our commitment to service excellence."
           />
         </motion.div>
 
