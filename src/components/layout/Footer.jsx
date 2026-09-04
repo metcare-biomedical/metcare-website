@@ -100,7 +100,7 @@ function Footer() {
 
             <div className="flex items-center gap-3">
               <MdOutlinePhoneIphone className="text-green-900" />
-              <span>(0915) 289-5621</span>
+              <span>09152895621</span>
             </div>
             <div className="flex items-center gap-3">
               <FaPhone className="text-green-900" />

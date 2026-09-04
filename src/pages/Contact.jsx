@@ -126,7 +126,7 @@ function Contact() {
         <div className="relative z-10">
           <SectionHeader
             title="Let's Discuss Your Healthcare Equipment Needs"
-            description="Have questions or need a quotation? Send us a message and our team will get back to you as soon as possible."
+            description="Have a question or need assistance? Have a concern to report or feedback to share? We’re here to listen."
           />
         </div>
       </section>
@@ -158,14 +158,25 @@ function Contact() {
             {/* Contact Information */}
 
             <div className=" grid gap-12 lg:grid-cols-2">
-              <div className="sm:mt-15 space-y-12">
+              <div>
                 <SectionHeader
                   badge="Contact Us"
                   title="We Offer 24/7 Emergency Service To All of Our Customers"
-                  description="Because healthcare never stops, neither do we. Our dedicated biomedical team is available around the clock to respond to urgent service calls, equipment breakdowns, and critical technical issues. With fast response times and expert care, we make sure your medical equipment is always ready when lives depend on it."
                   center={false}
                 />
-                <div className="grid gap-12 lg:grid-cols-2">
+                <p className="mt-4 sm:text-lg leading-8 text-slate-600">
+                  At Metcare Biomedical Corporation, we are committed to providing reliable, responsive, and quality biomedical engineering and metrology services. Your questions, concerns, and feedback are important to us and help us continuously improve our products, services, and customer experience.
+                </p>
+                <p className="mt-4 sm:text-lg leading-8 text-slate-600">
+                  Whether you would like to make an inquiry, request information
+                  about our products or services, submit a complaint, raise a
+                  concern, or provide feedback and suggestions, we encourage you
+                  to get in touch with our team.
+                </p>
+                <p className="mt-4 sm:text-lg leading-8 text-slate-600">
+                  Please provide the necessary details through the form below so we can properly understand and address your request or concern. All inquiries, complaints, and feedback will be handled appropriately and reviewed by the concerned personnel for proper action.
+                </p>
+                <div className="grid gap-12 lg:grid-cols-2 mt-12">
                   <div className="space-y-2">
                     <div className="flex gap-2 items-center">
                       <FaEnvelope className="text-green-600 text-xl" />
@@ -178,14 +189,14 @@ function Contact() {
                       <FaClock className="text-green-600 text-xl" />
                       <h2 className="text-lg font-semibold">Open Hours</h2>
                     </div>
-                    <p className="">Mon-Sat: 8am-5pm</p>
+                    <p className="">Monday to Saturday, 8:00 to 5:00 PM</p>
                   </div>
                   <div className="space-y-2">
                     <div className="flex gap-2 items-center">
                       <MdOutlinePhoneIphone className="text-green-600 text-2xl" />
                       <h2 className="text-lg font-semibold">Mobile Number</h2>
                     </div>
-                    <p className="">(0915) 289-5621</p>
+                    <p className="">09152895621</p>
                   </div>
                   <div className="space-y-2">
                     <div className="flex gap-2 items-center">
