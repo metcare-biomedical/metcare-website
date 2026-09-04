@@ -76,7 +76,7 @@ function Footer() {
             </h3>
           </div>
           <ul className="mt-6 space-y-5">
-            <li>Medical Dental and Laboratory Equipment</li>
+            <li>Medical, Dental, and Laboratory Equipment</li>
           </ul>
         </div>
 

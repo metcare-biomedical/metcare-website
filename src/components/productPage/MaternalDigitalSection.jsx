@@ -21,7 +21,7 @@ function MaternalDigitalSection() {
               {maternal.map((product) => (
                 <div
                   key={product.title}
-                  className="flex h-[450px] sm:h-[400px] flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-2 hover:shadow-xl w-[380px]"
+                  className="flex h-[450px] sm:h-[400px] flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-2 hover:shadow-xl max-w-[380px]"
                 >
                   <img
                     src={product.image}
@@ -56,7 +56,7 @@ function MaternalDigitalSection() {
               {digitalHealth.map((product) => (
                 <div
                   key={product.title}
-                  className="flex h-[450px] sm:h-[400px] flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-2 hover:shadow-xl w-[380px]"
+                  className="flex h-[450px] sm:h-[400px] flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-2 hover:shadow-xl max-w-[380px]"
                 >
                   <img
                     src={product.image}

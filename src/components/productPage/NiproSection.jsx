@@ -9,7 +9,7 @@ import { nipro } from "../../data/products";
 function NiproSection() {
   const [showOptions, setShowOptions] = useState(false);
   return (
-    <section className="px-20 pt-10 bg-white">
+    <section className="pt-10 bg-white">
       <Container>
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* Left */}
