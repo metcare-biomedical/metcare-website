@@ -15,7 +15,7 @@ function Footer() {
           {/* <h2 className="text-2xl font-bold text-white">Metcare</h2> */}
 
           <p className="mt-2 text-green-900 font-bold text-xl">
-            Biomedical Corporation
+            METCARE Biomedical Corporation
           </p>
 
           <p className="mt-6 leading-7">Precision in every measure.</p>
