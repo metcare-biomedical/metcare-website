@@ -1,4 +1,4 @@
-export function autoReplyEmail({ name, subject, category, isAnonymous }) {
+export function autoReplyEmail({ name, message, category, isAnonymous }) {
   const copy = {
     Complaint: {
       heading: "We've received your complaint",
@@ -74,8 +74,8 @@ ${intro}
 ${label}
 </div>
 
-<div style="font-size:14px;line-height:1.8;color:#333333;padding:24px 28px;border-left:2px solid #0F7B43;background:#fafafa;margin-bottom:36px;">
-${subject}
+<div style="font-size:14px;line-height:1.8;color:#333333;padding:24px 28px;border-left:2px solid #0F7B43;background:#fafafa;">
+${message.replace(/\n/g, "<br>")}
 </div>
 
 <p style="margin:0;font-size:13px;line-height:1.6;color:#a3a3a3;">

@@ -191,7 +191,7 @@ export default async function handler(req, res) {
       subject: "We've received your inquiry",
       html: autoReplyEmail({
         name,
-        subject,
+        message,
         category,
         isAnonymous,
       }),
