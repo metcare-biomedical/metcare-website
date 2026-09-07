@@ -22,7 +22,7 @@ style="background:white;border-radius:16px;border:1px solid #e5e7eb;overflow:hid
 style="background:#0F7B43;padding:40px;">
 
 <img
-src="https://metcare-alpha.vercel.app/logo.jpg"
+src="https://www.metcarebiomedical.com/assets/logo-BqK5G03e.jpg"
 width="90"
 alt="Metcare"
 />
@@ -42,7 +42,7 @@ Thank You!
 <p>Hello <strong>${name}</strong>,</p>
 
 <p>
-Thank you for contacting <strong>Metcare</strong>.
+Thank you for contacting <strong>METCARE</strong>.
 </p>
 
 <p>
@@ -59,7 +59,7 @@ ${subject}
 </p>
 
 <p>
-Our biomedical engineering team will review your inquiry and respond as soon as possible during business hours.
+Our team will review your inquiry and respond as soon as possible during business hours.
 </p>
 
 <hr style="margin:30px 0;">
@@ -77,7 +77,7 @@ This is an automated email. Please do not reply directly to this message.
 <td align="center"
 style="background:#f9fafb;padding:20px;font-size:13px;color:#9ca3af;">
 
-Metcare Biomedical Engineering Solutions
+METCARE Biomedical Corporation
 
 </td>
 
