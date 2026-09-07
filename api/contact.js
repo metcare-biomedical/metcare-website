@@ -181,7 +181,7 @@ export default async function handler(req, res) {
 
     // Send confirmation email to the customer
     const { error: autoReplyError } = await resend.emails.send({
-      from: "Metcare <onboarding@resend.dev>",
+      from: "Metcare <noreply@metcarebiomedical.com>",
       to: email,
       subject: "We've received your inquiry",
       html: autoReplyEmail({
