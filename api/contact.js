@@ -155,20 +155,38 @@ export default async function handler(req, res) {
     }
 
     // Send email
-    const { error } = await resend.emails.send({
-      from: "Metcare Website <noreply@metcarebiomedical.com>",
-      to: process.env.CONTACT_EMAIL,
-      replyTo: email,
-      subject: `${category} message from Website`,
-      html: adminEmail({
-        name,
-        email,
-        subject,
-        category,
-        message,
-        isAnonymous,
-      }),
-    });
+
+    if (category === "Complaint") {
+      const { error } = await resend.emails.send({
+        from: "Metcare Website <noreply@metcarebiomedical.com>",
+        to: process.env.CONTACT_EMAIL,
+        replyTo: email,
+        subject: `${category} message from Website`,
+        html: adminEmail({
+          name,
+          email,
+          subject,
+          category,
+          message,
+          isAnonymous,
+        }),
+      });
+    } else {
+      const { error } = await resend.emails.send({
+        from: "Metcare Website <noreply@metcarebiomedical.com>",
+        to: process.env.CONTACT_EMAIL,
+        replyTo: email,
+        subject: `${category} message from Website`,
+        html: adminEmail({
+          name,
+          email,
+          subject,
+          category,
+          message,
+          isAnonymous,
+        }),
+      });
+    }
 
     if (error) {
       console.error(error);
