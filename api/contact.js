@@ -1,3 +1,4 @@
+//contacts.js
 import { Resend } from "resend";
 import { ratelimit } from "../lib/rateLimit.js";
 import { adminEmail } from "../emails/adminEmail.js";
@@ -137,7 +138,12 @@ export default async function handler(req, res) {
       });
     }
 
-    const allowedHosts = ["localhost", "metcare-nine.vercel.app", "metcarebiomedical.com", "www.metcarebiomedical.com"];
+    const allowedHosts = [
+      "localhost",
+      "metcare-nine.vercel.app",
+      "metcarebiomedical.com",
+      "www.metcarebiomedical.com",
+    ];
 
     if (!allowedHosts.includes(verifyData.hostname)) {
       console.error("Unexpected Turnstile hostname:", verifyData.hostname);
@@ -179,8 +185,10 @@ export default async function handler(req, res) {
       to: email,
       subject: "We've received your inquiry",
       html: autoReplyEmail({
-        name,
-        subject,
+        name: safeName,
+        subject: safeSubject,
+        category,
+        isAnonymous,
       }),
     });
 

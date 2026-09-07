@@ -1,4 +1,29 @@
-export function autoReplyEmail({ name, subject }) {
+export function autoReplyEmail({ name, subject, category, isAnonymous }) {
+  const copy = {
+    Complaint: {
+      heading: "We've received your complaint",
+      intro:
+        "Thank you for letting us know. Your complaint has been logged and our team will review it and follow up as needed.",
+      label: "Your Complaint",
+    },
+    Feedback: {
+      heading: "Thank you for your feedback",
+      intro:
+        "We appreciate you taking the time to share your thoughts with us. Your feedback helps us improve.",
+      label: "Your Feedback",
+    },
+    Inquiry: {
+      heading: "Thank you for reaching out",
+      intro:
+        "We've received your inquiry and a member of our team will get back to you shortly during business hours.",
+      label: "Your Inquiry",
+    },
+  };
+
+  const { heading, intro, label } = copy[category] || copy.Inquiry;
+
+  const isAnonymousComplaint = category === "Complaint" && isAnonymous;
+
   return `
 <!DOCTYPE html>
 <html>
@@ -7,92 +32,75 @@ export function autoReplyEmail({ name, subject }) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body style="margin:0;padding:0;background:#f4f7f6;font-family:Arial,sans-serif;">
+<body style="margin:0;padding:0;background:#fafafa;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1a1a1a;">
 
-<table width="100%" cellpadding="0" cellspacing="0" style="padding:40px 20px;">
+<table width="100%" cellpadding="0" cellspacing="0" style="padding:64px 20px;">
 <tr>
 <td align="center">
 
-<table width="650" cellpadding="0" cellspacing="0"
-style="background:white;border-radius:16px;border:1px solid #e5e7eb;overflow:hidden;">
+<table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;">
+
+<!-- Header -->
+<tr>
+<td style="padding:44px 48px 28px;">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+  <td style="text-align:center;">
+    <img
+      src="https://www.metcarebiomedical.com/assets/logo-BqK5G03e.jpg"
+      width="210"
+      alt="Metcare"
+      style="display:block;margin:0 auto;"
+    />
+  </td>
+</tr>
+</table>
+</td>
+</tr>
 
 <tr>
+<td style="padding:0 48px 44px;border-top:1px solid #eeeeee;">
 
-<td align="center"
-style="background:#0F7B43;padding:40px;">
-
-<img
-src="https://www.metcarebiomedical.com/assets/logo-BqK5G03e.jpg"
-width="90"
-alt="Metcare"
-/>
-
-<h1 style="color:white;margin-top:20px;">
-Thank You!
+<h1 style="margin:36px 0 10px;font-size:19px;font-weight:600;color:#111111;">
+${isAnonymousComplaint ? heading : `${heading}, ${name}`}
 </h1>
 
-</td>
-
-</tr>
-
-<tr>
-
-<td style="padding:40px;">
-
-<p>Hello <strong>${name}</strong>,</p>
-
-<p>
-Thank you for contacting <strong>METCARE</strong>.
+<p style="margin:0 0 36px;font-size:14px;line-height:1.6;color:#767676;">
+${intro}
 </p>
 
-<p>
-We have successfully received your inquiry regarding:
-</p>
+<!-- Subject -->
+<div style="font-size:12px;color:#a3a3a3;margin-bottom:12px;text-transform:uppercase;letter-spacing:0.5px;">
+${label}
+</div>
 
-<p style="
-background:#ECFDF5;
-padding:16px;
-border-left:5px solid #0F7B43;
-font-weight:bold;
-">
+<div style="font-size:14px;line-height:1.8;color:#333333;padding:24px 28px;border-left:2px solid #0F7B43;background:#fafafa;margin-bottom:36px;">
 ${subject}
-</p>
+</div>
 
-<p>
-Our team will review your inquiry and respond as soon as possible during business hours.
-</p>
-
-<hr style="margin:30px 0;">
-
-<p style="font-size:13px;color:#9ca3af;">
-This is an automated email. Please do not reply directly to this message.
+<p style="margin:0;font-size:13px;line-height:1.6;color:#a3a3a3;">
+This is an automated confirmation. Please do not reply directly to this email.
 </p>
 
 </td>
-
 </tr>
 
+<!-- Footer -->
 <tr>
-
-<td align="center"
-style="background:#f9fafb;padding:20px;font-size:13px;color:#9ca3af;">
-
+<td style="padding:28px 48px 44px;border-top:1px solid #eeeeee;">
+<p style="font-size:12px;color:#bfbfbf;margin:0;">
 METCARE Biomedical Corporation
-
+</p>
 </td>
-
 </tr>
 
 </table>
 
 </td>
-
 </tr>
-
 </table>
 
 </body>
-
 </html>
 `;
 }

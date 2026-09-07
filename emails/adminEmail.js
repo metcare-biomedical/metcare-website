@@ -1,3 +1,4 @@
+//adminEmail.js
 export function adminEmail({
   name,
   email,
